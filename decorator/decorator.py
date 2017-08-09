@@ -1,5 +1,6 @@
 import time
 
+
 # Decorator
 def measure_time_of_func(func):
     def wrapper_func(n):
@@ -7,6 +8,7 @@ def measure_time_of_func(func):
         fib_seq = func(n)
         end_time = time.time()
         return (fib_seq, end_time - start_time)
+
     return wrapper_func
 
 
